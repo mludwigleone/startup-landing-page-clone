@@ -1,0 +1,75 @@
+html{
+	box-sizing: border-box;
+	background-color: LightGray;
+
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	background-color: White;
+	font-family: "Roboto", sans-serif;
+	color: #838994;
+	letter-spacing: 0.03em;
+	margin: 0 auto;
+	width: 970px;
+}
+div {
+	border: 1px solid Chocolate;
+}
+body > .content {
+	padding: 0px 15px;
+	width: 970px
+}
+/* Navigation Section */
+.top-navigation {
+	background-color: #fff;
+}
+.top-navigation > .content {
+	height: 70px;
+	padding: 0px 15px;
+}
+.top-navigation .links {
+	float: right;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+.top-navigation .links > .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+.top-navigation .links li:hover {
+	cursor: pointer;
+	color: #333333;
+}
+.links > li {
+	list-style-type: none;
+	display: inline-block;
+	line-height: 70px;
+	margin-left: 1.563rem;
+}
+.logo {
+	height: 70px;
+}
+/* Introduction */
+
+.introduction {
+	background: url("css/pictures/background-image.jpg") center bottom no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	width: 100%;
+	overflow: auto;
+}
+.introduction > .content{
+	/*position: center;*/
+	text-align: center;
+	vertical-align: center;
+}
+
+button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+}
