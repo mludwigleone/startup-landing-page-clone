@@ -24,6 +24,9 @@ body > .content {
 /* Navigation Section */
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 .top-navigation > .content {
 	height: 70px;
@@ -34,7 +37,7 @@ body > .content {
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
-}
+} >
 .top-navigation .links > .active {
 	color: #4c5058;
 	font-weight: 500;
@@ -55,21 +58,66 @@ body > .content {
 /* Introduction */
 
 .introduction {
-	background: url("css/pictures/background-image.jpg") center bottom no-repeat;
+	background: url("../pictures/background-image.jpg") center bottom no-repeat;
 	background-size: cover;
 	height: 45.938rem;
 	width: 100%;
 	overflow: auto;
 }
-.introduction > .content{
-	/*position: center;*/
+
+.introduction > .content {
 	text-align: center;
-	vertical-align: center;
+	padding-top: 200px;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+	color: white;
+}
+
+.content > h1 {
+	font-size: 3rem;
+	font-weight: 1;
+}
+.content > h3 {
+	font-size: 1.5rem;
 }
 
 button {
 	text-shadow: none;
+	color: white;
 	border-style: none;
 	border-radius: 4px;
 	padding: 1rem 1.5rem;
+	width: 155px;
+	height: 53px;
+	background-color: #e65c00;	
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+button:hover {
+	background-color: #cc5200;
+}
+
+.cases {
+	text-align: center;
+}
+
+.cases .devices {
+	width: 33.333333%;
+	display: inline-block;
+}
+
+.social .content {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.social .icons > li {
+	list-style: none;
+	display: inline-block;
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	margin: 1.25rem 5px;
+	border: 1px solid #eaebec;
+	padding: 0.625rem 0;
+	text-align: center;
 }
