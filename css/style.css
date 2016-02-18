@@ -1,6 +1,7 @@
 html{
 	box-sizing: border-box;
 	background-color: LightGray;
+	font-weight: 300;
 
 }
 *, *:before, *:after {
@@ -14,9 +15,7 @@ body {
 	margin: 0 auto;
 	width: 970px;
 }
-div {
-	border: 1px solid Chocolate;
-}
+
 body > .content {
 	padding: 0px 15px;
 	width: 970px
@@ -25,6 +24,8 @@ body > .content {
 .top-navigation {
 	background-color: #fff;
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	z-index: 9999;
 }
@@ -37,8 +38,8 @@ body > .content {
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
-} >
-.top-navigation .links > .active {
+} 
+.top-navigation .links .active {
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -56,6 +57,11 @@ body > .content {
 	height: 70px;
 }
 /* Introduction */
+
+h1, h2, h3 {
+	font-weight: 300;
+}
+
 
 .introduction {
 	background: url("../pictures/background-image.jpg") center bottom no-repeat;
@@ -75,7 +81,6 @@ body > .content {
 
 .content > h1 {
 	font-size: 3rem;
-	font-weight: 1;
 }
 .content > h3 {
 	font-size: 1.5rem;
@@ -99,6 +104,9 @@ button:hover {
 
 .cases {
 	text-align: center;
+	color: black;
+	padding-top: 100px;
+	font-weight: 300;
 }
 
 .cases .devices {
@@ -106,18 +114,33 @@ button:hover {
 	display: inline-block;
 }
 
+hr {
+	display: block;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+}
 .social .content {
 	text-align: center;
 	padding-top: 2rem;
 }
-
+.icons {
+	padding: 0;
+	margin: 0;
+}
 .social .icons > li {
 	list-style: none;
 	display: inline-block;
-	border-radius: 1.25rem;
+	border-radius: 100%;
 	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
 	margin: 1.25rem 5px;
 	border: 1px solid #eaebec;
-	padding: 0.625rem 0;
 	text-align: center;
+}
+
+.social {
+	padding-bottom: 10px;
 }
